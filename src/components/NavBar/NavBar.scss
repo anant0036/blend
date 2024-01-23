@@ -1,15 +1,18 @@
 .navbar {
+
     height: 10vh;
+
     background-color: black;
     display: flex;
     align-items: center;
     align-content: center;
     justify-content: center;
     color: white;
-   
+
+
 
     img {
-        height: 110px;
+        height: 5.5rem;
         transition: transform 0.4s;
         cursor: pointer;
     }

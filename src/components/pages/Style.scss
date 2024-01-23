@@ -5,7 +5,7 @@
     background-image: linear-gradient(to bottom, transparent -95%, black 100%),
         url('../../../public/bg01.jpg');
     background-size: cover;
-    background-position: top;
+    background-position: center;
     background-repeat: no-repeat;
     color: white;
 }
@@ -20,7 +20,7 @@
     color: white;
 
     img {
-        height: 110px;
+        height: 5rem;
         transition: transform 0.4s;
         cursor: pointer;
     }
@@ -45,7 +45,7 @@
     font-family: "Kaushan Script", cursive;
     font-weight: 400;
     font-style: normal;
-    font-size: 68px;
+    font-size: 3.5rem;
     letter-spacing: 4px;
     user-select: none;
 
@@ -57,18 +57,18 @@
 
     h1 {
         //border: 1px solid red;
-        margin-top: 165px;
+        margin-top: 11.5rem;
         margin-bottom: -10px;
         padding: 5px;
     }
 
     p {
-        font-size: 22px;
+        font-size: 1rem;
     }
 
     span {
-        font-size: 14px;
-        margin-left: 610px;
+        font-size: 0.75rem;
+        margin-left: 30rem;
     }
 }
 
@@ -126,6 +126,245 @@
 }
 
 .btn-home {
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 2.8rem;
+    margin-right: 2.8rem;
+}
+
+//////////// DRINKS PAGE 
+
+.drinks-container-bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 90vh;
+    background-color: rgba(0, 0, 0, 0.85);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    color: white;
+    padding: 0.5rem;
+    border-radius: 2rem;
+    overflow: hidden;
+    margin: 2rem;
+
+    height: auto;
+    width: 13rem;
+
+    img {
+        height: 12rem;
+        padding: 0.5rem;
+        border-radius: 1.5rem;
+
+    }
+
+    h3 {
+        font-size: 1rem;
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+
+    p {
+        font-size: 0.7rem;
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+
+    button {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        height: 1rem;
+        font-family: inherit;
+        font-size: 0.7rem;
+        font-weight: 800;
+        letter-spacing: 1.2px;
+    }
+
+    .bn5 {
+        padding: 0.6em 2em;
+        border: none;
+        outline: none;
+        color: rgb(255, 255, 255);
+        background: #111;
+        cursor: pointer;
+        position: relative;
+        z-index: 0;
+        border-radius: 10px;
+    }
+
+    .bn5:before {
+        content: "";
+        background: linear-gradient(45deg,
+                #ff0000,
+                #ff7300,
+                #fffb00,
+                #48ff00,
+                #00ffd5,
+                #002bff,
+                #7a00ff,
+                #ff00c8,
+                #ff0000);
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        background-size: 400%;
+        z-index: -1;
+        filter: blur(5px);
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        animation: glowingbn5 20s linear infinite;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+        border-radius: 10px;
+    }
+
+    @keyframes glowingbn5 {
+        0% {
+            background-position: 0 0;
+        }
+
+        50% {
+            background-position: 400% 0;
+        }
+
+        100% {
+            background-position: 0 0;
+        }
+    }
+
+    .bn5:active {
+        color: #000;
+    }
+
+    .bn5:active:after {
+        background: transparent;
+    }
+
+    .bn5:hover:before {
+        opacity: 1;
+    }
+
+    .bn5:after {
+        z-index: -1;
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #191919;
+        left: 0;
+        top: 0;
+        border-radius: 10px;
+    }
+
+
+}
+
+///// DETAILS PAGE 
+
+.container-detail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    min-height: 90vh;
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+.sub-container-detail {
+    height: 75vh;
+    width: 88vw;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    
+    padding: 1rem;
+    
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 2rem;
+    color: white;
+
+    h2 {
+        font-size: 1.2rem;
+
+    }
+
+}
+
+.container-contant {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    padding: 1rem;
+
+    div {
+        padding: 1.8rem;
+        margin: 0.4rem;
+    }
+
+}
+
+.instructions {
+    max-width: 32rem;
+    line-height: 1.4rem;
+    h2 {
+        margin-bottom: 1rem;
+        text-align: end;
+        letter-spacing: 0.15rem;
+    }
+
+    p {
+        text-align: start;
+    }
+}
+
+.ingredients {
+    max-width: 32rem;
+    line-height: 1.4rem;
+    border-right: 5px solid white;
+    h2 {
+        margin-bottom: 1rem;
+        text-align: end;
+        letter-spacing: 0.15rem;
+    }
+}
+
+.container-highlight {
+    max-width: 28rem;
+    padding: 1.5rem;
+    line-height: 2.2rem;
+    overflow: hidden;
+
+    img {
+        margin-top: 1rem;
+        height: 18rem;
+        border-radius: 1.5rem;
+    }
+
+    h2 {
+        letter-spacing: 0.25rem;
+        margin-bottom: 0.5rem;
+        font-size: 2.5rem;
+        line-height: 3.0rem;
+    }
+
+    h3 {
+        font-size: 0.9rem;
+        letter-spacing: 0.15rem;
+    }
+
 }

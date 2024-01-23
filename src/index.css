@@ -7,8 +7,18 @@
   box-sizing: inherit;
 }
 
+html {
+  font-size: 19px;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
   font-style: normal;
+}
+
+@media screen and (min-width: 2150px) {
+  html {
+    font-size: 25px;
+  }
 }
